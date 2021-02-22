@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('compile') {
+            steps {
+                echo 'Checking Out Code ....'
+                git credentialsId: 'nilesh-gitlabid', url: 'http://gitlab.example.com/nileshd/pocpipeline.git'
+                bat 'mvn clean compile package'
+            }
+        }
+        stage('prepare env') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('publish nexus') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+192.168.11.161	devops01.example.com
+192.168.11.162	devops02.example.com
+192.168.11.163	devops03.example.com
+192.168.11.164	devops04.example.com
+192.168.11.165	devops05.example.com
+192.168.11.166	devops06.example.com
+192.168.11.167	devops07.example.com
+192.168.11.168	devops08.example.com
+192.168.11.169	devops09.example.com
+192.168.11.170	devops10.example.com
+192.168.11.171	devops11.example.com
+192.168.11.172	devops12.example.com
+192.168.11.173	devops13.example.com
+192.168.11.174	devops14.example.com
+192.168.11.175	devops15.example.com
+192.168.11.176	devops16.example.com
+192.168.11.177	devops17.example.com
+192.168.11.178	devops18.example.com
+192.168.11.179	devops19.example.com
+192.168.11.180	devops20.example.com
+192.168.11.181	devops21.example.com
+192.168.11.182	devops22.example.com
+192.168.11.183	devops23.example.com
+192.168.11.184	devops24.example.com
+192.168.11.185	devops25.example.com
+192.168.11.186	devops26.example.com
+192.168.11.187	devops27.example.com
+192.168.186.128	host01.example.com
+192.168.11.160	gitlab.example.com
+192.168.11.160	nexus.example.com
+192.168.11.160	sonar.example.com
+# Added by Docker Desktop
+192.168.11.164 host.docker.internal
+192.168.11.164 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+

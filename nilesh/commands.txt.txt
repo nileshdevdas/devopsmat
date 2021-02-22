@@ -1,0 +1,155 @@
+1. mkdir myapp  
+	# creates a directory
+2. cd myapp 
+	# changes to the directory
+3. npm init -y 
+	# initializing a node application scaffold (Construct)
+4. npm i express 
+	# install libraries 
+
+package.json ---> Project Description file 
+
+5.   .gitignore  (file) 
+	these which i want to ignore 
+	package-lock.json
+	node_modules
+
+When a file is to be commited   git add ---> does commit the file but enables it for tracking 
+	staging mode 
+when you say git commit the file gets added to the repository (Local) 
+
+
+	git init   # initilizes a repo 
+	git add    # addes files to the staging
+	git commit -m "Message"  Commits the file in the staging area 
+
+	git config --global user.email "yoruemail"
+	git config --global user.name "Yourname"
+
+	when the above is added it creates a .gitconfig ---> 
+	
+	git commit -m "Initial Commit"
+
+	git log 
+
+	git show --pretty="" --name-only  b15835d5459174745fb8073f57a412ea71034d04
+	#of the commit to only describe a specific commit 
+
+
+	index.js 
+
+	ctrl + ~ 
+	changed to the command mode 
+
+	node  index.js 
+
+
+
+<!-- add the below lines to your pom.xml --> 
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.6</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.9.1</version>
+			</plugin>
+		</plugins>
+	</build>
+
+<!-- once the above addd --> 
+
+	site:site
+	package
+
+
+1. docker image download : 
+       tomcat 
+	docker pull  tomcat 
+ew
+
+2. docker image create container 
+
+3. we are going to copy or add some files to you container 
+
+4. now the contaienr state is changed so we are now going to convert the container into a image 
+   by commiting the changes 
+
+5. then we will also tag the image and finally we will create a dockerhub or our local nexus account 
+   and we will push the images to the repository 
+
+
+docker run --name <somename> -d  -p87:8080  tomcat 
+
+su root 
+# pwd = root123 
+
+firewall-cmd --zone=public --add-port=87/tcp --permanent
+
+ firewall-cmd --reload
+
+
+docker commit  <containerName> yourreponame/yourimagename:version
+
+docker commit  nilesh_tomcat_2   nileshvinsys/mytomcat001nileshvinsys
+
+docker login 
+<your user> 
+<your pwd> 
+
+docker push <imageName>
+
+
+
+		docker commit nilesh_tomcat_2   nileshvinsys/anyanyimagename 
+
+		// the above comand will create a image .... 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+---
+  # Play1 - WebServer related tasks
+  - name: Play Web - Create apache directories and username in web servers
+    hosts: localhost
+    become: yes
+    become_user: root
+    tasks:
+      - name: create username apacheadm
+        user:
+          name: apacheadm
+          shell: /bin/bash
+          home: /home/webserver
+
+      - name: install python
+        yum:
+          name: python
+          state: present
+      - name: install httpd
+        yum:
+          name: httpd
+          state: present

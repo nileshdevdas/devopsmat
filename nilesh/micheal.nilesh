@@ -1,0 +1,3 @@
+FROM  scottyengineering/java11
+COPY abc.jar  /opt/apps/abc.jar
+ENTRYPOINT java -jar abc.jar

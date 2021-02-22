@@ -1,0 +1,51 @@
+	<description>
+	Developed by Nilesh D for the Devops Training in Siemens 
+	Online Classroom
+	</description>
+	<developers>
+		<developer>
+			<email>nilesh.devdas.ext@siemens.com</email>
+			<name>Nilesh D</name>
+			<organization>Siemens</organization>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>Abhishek</name>
+			<email>abhishek.g@gmail.com</email>
+		</contributor>
+	</contributors>
+	<scm>
+		<url>http://gitlab.example.com/nileshd/myappnilesh.git</url>
+		<tag>master</tag>
+	</scm>
+	<inceptionYear>2021</inceptionYear>
+	<licenses>
+		<license>
+			<distribution>PUBLIC</distribution>
+			<name>License1</name>
+			<comments>Sample License</comments>
+		</license>
+	</licenses>
+	<issueManagement>
+		<system>JIRA</system>
+		<url>http://jira.com</url>
+	</issueManagement>
+	<organization>
+		<name>Vinsys</name>
+		<url>https://www.vinsys.com</url>
+	</organization>
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+	<build>

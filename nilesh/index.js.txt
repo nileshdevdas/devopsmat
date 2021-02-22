@@ -1,0 +1,13 @@
+var express = require("express");
+var app = express();
+
+app.get("/hello", (req, res) => {
+    res.setHeader("Content-Type", "application/json");
+    var user = {}
+    user.username = "nilesh";
+    user.greetings = "hello";
+    res.write(JSON.stringify(user));
+    res.end();
+});
+
+app.listen(5000);
